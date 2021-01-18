@@ -1,0 +1,5 @@
+# Project exclude paths
+/sd-advanced-and-design-patterns-main/.gradle/
+/sd-advanced-and-design-patterns-main/app/build/
+/sd-advanced-and-design-patterns-main/app/build/classes/java/main/
+/sd-advanced-and-design-patterns-main/app/build/classes/java/test/
