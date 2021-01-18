@@ -5,8 +5,37 @@ Create a method that takes the map as a parameter, where the key is string and t
 prints each map element to the console in the format: Key: <k>, Value: <v>. There should be a comma at the
 end of every line except the last, and a period at the last.
 */
+
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Map;
+
 public class Exercise3 implements Exercise {
     @Override
     public void run() {
+        Map<String, Integer> store = new HashMap<>() {{
+            put("Java", 18);
+            put("Python", 1);
+            put("PHP", 2);
+            put("C++", 5);
+        }};
+
+        printEntries(store);
+    }
+
+    private void printEntries(Map<String, Integer> store) {
+        Iterator<Map.Entry<String, Integer> > i = store.entrySet().iterator();
+
+        do {
+            Map.Entry<String, Integer> e = i.next();
+
+            if (i.hasNext()) {
+                System.out.printf("Key: %s, Value: %s,%n", e.getKey(), e.getValue());
+            } else {
+                System.out.printf("Key: %s, Value: %s.%n", e.getKey(), e.getValue());
+            }
+
+        } while (i.hasNext());
     }
 }

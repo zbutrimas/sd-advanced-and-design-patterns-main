@@ -13,7 +13,7 @@ import java.util.Map;
 public class Exercise6 implements Exercise {
     @Override
     public void run() {
-        List<String> lines = FileUtil.readData("C:\\Pramogos\\sd-advanced-and-design-patterns-main\\sd-advanced-and-design-patterns-main\\app\\src\\main\\java\\com\\sd\\advanced\\coding\\exercises\\ex1words");
+        List<String> lines = FileUtil.readData("C:\\Users\\Zydrunas\\Desktop\\1 sda\\Pamoku failai\\sd-advanced-and-design-patterns-main\\sd-advanced-and-design-patterns-main\\app\\src\\main\\java\\com\\sd\\advanced\\coding\\exercises\\ex1words");
 
         Map<String, Integer> wordCounter = new HashMap<>();
         for (String line: lines) {
